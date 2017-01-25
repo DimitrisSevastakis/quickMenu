@@ -1,5 +1,4 @@
-# popTab
+# QuickMenu
 
-Simple chrome extension that pops the current tab out of it's window container. 
+Simple chrome extension that provides a context menu upon text selection. 
 
-Assign a keyboard shortcut from the settings menu for quick access.
