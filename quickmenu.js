@@ -10,14 +10,14 @@ $(document).ready(function(){
 
     $('body').append($("<div id='quick-menu-view'><span id='search' class='quick-menu-button left'>WEB SEARCH</span><span id='close' class='quick-menu-button right'>CLOSE</span></div>"))
 
-    $(document).on("mouseup", function(e){
+    $(document).on("mouseup keyup", function(e){
         console.log(e);
         var selection = window.getSelection().toString();
         var qmv = $("#quick-menu-view");
         if(selection != ""){
             // alert("selected: " + selection);
             console.log(e.pageX + " - " + e.pageY);
-            qmv.css({"top": e.pageY -70+"px", "left": e.pageX-80+"px"});
+            qmv.css({"top": e.pageY -80+"px", "left": e.pageX-80+"px"});
             qmv.show();
             selection_text = selection;
         }else{
