@@ -17,6 +17,7 @@
   height: 100%;
   cursor: pointer;
 }
+
 #quick-menu-view span:not(:first-child){
   border-left:1px solid #000;
   overflow: auto;
@@ -24,7 +25,12 @@
 }
 
 .quick-menu-button.left{
-	padding-right: 10px;
+  padding-right: 10px;
+}
+
+.quick-menu-button.center{
+  padding-right: 10px;
+	padding-left: 10px;
 }
 
 .quick-menu-button.right{

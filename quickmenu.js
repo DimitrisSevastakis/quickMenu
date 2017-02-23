@@ -8,7 +8,7 @@ $(document).ready(function(){
     };
 
 
-    $('body').append($("<div id='quick-menu-view'><span id='search' class='quick-menu-button left'>WEB SEARCH</span><span id='translate' class='quick-menu-button left'>TRANSLATE</span><span id='close' class='quick-menu-button right'>CLOSE</span></div>"))
+    $('body').append($("<div id='quick-menu-view'><span id='search' class='quick-menu-button left'>WEB SEARCH</span><span id='translate' class='quick-menu-button center'>TRANSLATE</span><span id='close' class='quick-menu-button right'>CLOSE</span></div>"))
 
     $(document).on("mouseup keyup", function(e){
         var selection = window.getSelection().toString();
