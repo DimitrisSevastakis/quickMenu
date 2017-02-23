@@ -8,7 +8,7 @@ $(document).ready(function(){
     };
 
 
-    $('body').append($("<div id='quick-menu-view'><span id='search' class='quick-menu-button left'>WEB SEARCH</span><span id='close' class='quick-menu-button right'>CLOSE</span></div>"))
+    $('body').append($("<div id='quick-menu-view'><span id='search' class='quick-menu-button left'>WEB SEARCH</span><span id='translate' class='quick-menu-button left'>TRANSLATE</span><span id='close' class='quick-menu-button right'>CLOSE</span></div>"))
 
     $(document).on("mouseup keyup", function(e){
         var selection = window.getSelection().toString();
@@ -30,6 +30,10 @@ $(document).ready(function(){
         searchSelection();
     });
 
+    $("#quick-menu-view span#translate").click(function(){
+        translateSelection();
+    });
+
     $(document).keydown(function (e) {
         var qmv = $("#quick-menu-view");
 
@@ -37,6 +41,13 @@ $(document).ready(function(){
             searchSelection();
         }
     });
+
+    var translateSelection = function(){
+        var selection = selection_text;
+        selection = encodeURIComponent(selection);
+        var search_link = "http://translate.google.com/#en/el/"+selection;
+        window.open(search_link).focus();
+    }
 
     var searchSelection = function(){
         var selection = selection_text;
