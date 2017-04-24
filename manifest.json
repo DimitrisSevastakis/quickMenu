@@ -9,8 +9,13 @@
     }
   ],
 
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+
   "name": "QuickMenu",
   "description": "Get a quick context menu when selecting text",
-  "version": "1.0"
+  "version": "1.1"
 
 }
